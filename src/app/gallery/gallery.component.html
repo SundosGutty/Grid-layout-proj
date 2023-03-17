@@ -1,0 +1,3 @@
+    <div class="gallery">
+        <figure *ngFor="let item of gallery" [ngClass]="item.figureClass"><img [src]="item.imgPath" [alt]="item.alt" class="gallery__img"></figure>
+    </div>

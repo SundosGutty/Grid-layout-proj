@@ -1,0 +1,33 @@
+@import "../../assets/sass/abstracts/variables";
+
+:host{
+    grid-column:  full-start / full-end;
+    background-color: $color-grey-light-1;
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+}
+
+.story{
+    height: 100%;
+    padding: 6rem;
+    &__content {
+        grid-column: col-start 5 / full-end;
+        padding: 6rem 8vw;
+        display: grid;
+        align-content: center;
+        justify-items: start;
+    
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 1 / -1;
+            grid-row: 5 / 6;
+        }
+    }
+    
+    &__text {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+    }
+}

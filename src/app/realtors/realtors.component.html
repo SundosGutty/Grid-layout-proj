@@ -1,0 +1,10 @@
+<div class="realtors">
+     <h3 class="heading-3">Top 3 Realtors</h3>
+    <div class="realtors__list" *ngFor="let item of realtorsList">
+        <img [src]="item.imgPath" alt="Realtor" class="realtors__img">
+        <div class="realtors__details">
+            <h4 class="heading-4 heading-4--light">{{item.name}}</h4>
+            <p class="realtors__sold">{{item.soldHouses}} houses sold</p>
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,15 @@
+@import "../../assets/sass/abstracts/variables";
+@import "../../assets/sass/layout/grid";
+
+
+:host{
+    grid-column: center-start/ center-end;
+}
+
+.features{
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: flex-start;
+}
